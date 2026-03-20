@@ -8,10 +8,10 @@ public class Exercise06 {
         double sum = 0;
 
         for (int i = 0; i < grades.length; i++) {
-            sum += grades[i] / grades.length;
+            sum += grades[i];
         }
 
-        return sum;
+        return sum / grades.length;
     }
 
     private static boolean isApproved(double average) {
@@ -40,7 +40,7 @@ public class Exercise06 {
         String status = approved ? "Approved" : "Failed";
 
         System.out.println();
-        System.out.printf("Final average: %.1f\n", average);
+        System.out.printf("Final average: %.1f%n", average);
         System.out.println("Status: " + status);
 
         scanner.close();
